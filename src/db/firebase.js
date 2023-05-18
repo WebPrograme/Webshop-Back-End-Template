@@ -145,6 +145,20 @@ class Orders { // Orders
         });
     }
 
+    async getOrder(uid, orderID) { // Get Order - By ID (Admin)
+        return new Promise((resolve, reject) => {
+            db.ref('Orders/' + uid + '/' + orderID).once('value', (snapshot) => {
+                if (snapshot.exists()) {
+                    resolve({ status: 200, results: snapshot.val() });
+                } else {
+                    reject({ status: 404, results: 'No Orders found' });
+                }
+            }).catch((error) => {
+                reject({ status: 500, results: error });
+            });
+        });
+    }
+
     async get(uid) { // Get Orders - By UID (Auth Needed)
         return new Promise((resolve, reject) => {
             db.ref('Orders/' + uid).once('value', (snapshot) => {
