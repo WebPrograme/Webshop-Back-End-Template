@@ -17,7 +17,7 @@ Dit is een basis template voor de backend van een Webshop. Hiermee kan je het vo
       - Toevoegen/verwijderen/aanpassen van kortingen
 
 ## Firebase
-**Firebase Realtime Database**: hier wordt alles opgeslagen (Achteraf bekeken was Firestore misschien toch de betere optie)
+**Firebase Realtime Database**: hier wordt alles opgeslagen (Achteraf bekeken was Firestore misschien toch de betere optie)\
 **Firebase Storage**: hier worden de afbeeldingen opgeslagen\
 **Firebase Auth**: hiermee kan je gebruikers en admins geauthenticeerd
 
