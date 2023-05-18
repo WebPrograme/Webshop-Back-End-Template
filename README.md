@@ -21,4 +21,4 @@ Dit is een basis template voor de backend van een Webshop. Hiermee kan je het vo
 **Firebase Storage**: hier worden de afbeeldingen opgeslagen\
 **Firebase Auth**: hiermee kan je gebruikers en admins geauthenticeerd
 
-Voor veiligheids redene wordt de `config/firebase.js` niet openbaar gemaakt.
+Voor veiligheids redene worden de `config/firebase.js` en `.env` niet openbaar gemaakt.
